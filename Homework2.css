@@ -57,6 +57,7 @@
 a{
     color: #0061ff;
     font-size: 18px;
+    font-weight: bolder;
 }
 a span{
     padding: 1.5px;
@@ -80,7 +81,6 @@ p{
     margin-bottom: 20px;
     color: #435e80;
 }
-
 ul{
     column-count: 2;
     color: #435d7f;
