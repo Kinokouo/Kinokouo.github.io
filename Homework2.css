@@ -63,7 +63,12 @@ a span{
     margin-left: 3px;
     position: absolute;
     text-decoration: none;
+    transition: .5s;
 }
+a:hover span{
+    margin-left: .4em;
+}
+
 h2{
     font-size: 30px;
     margin-bottom: 30px;
