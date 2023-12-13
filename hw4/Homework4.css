@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+.section{
+    width: 980px;
+    margin: 0 140px;
+    margin-bottom: 300px;
+    /* border: 1px solid red; */
+}
+
+.section:nth-child(2n) .block{
+    margin-left: auto;
+}
+.block{
+    width: 330px;
+}
+.section .block .slogan{
+    width: 330px;
+    background-color: #bb0404;
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.section .block .slogan span{
+    width: auto;
+    font-size: 100px;
+    transform: rotate(90deg);
+}
+.section:nth-child(2n) .slogan{
+    flex-direction: row-reverse;
+}
+
+.section .block .text{
+    width: 300px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    line-height: 30px;
+    padding-bottom: 50px;
+    position: absolute;
+}
+.section .block .text h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.section .photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section .photo .img{
+    width: 100%;
+} 
+
+.section .gray{
+    width: 140px;
+    padding: 150px;
+    float: right;
+    margin-top: -500px;
+    margin-right: 50px;
+    background-color: #f4f4f4;
+}
+.section .content{
+    width: 650px;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    position: absolute;
+}
+.section:nth-child(2n) .content{
+    margin-left: 260px;
+    margin-right: auto;
+}
+
+.section .content span{
+    color: red;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.section .content span::after{
+    content: "";
+    width: 20px;
+    height: 0px;
+    border-top: 1px solid red;
+    display: block;
+    flex-grow: 1;
+    margin-left: 5px;
+    
+}
+.section .content p{
+    display: inline-block;
+    padding: 3px 5px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    margin-bottom: 4px;
+}
+.section .content ul{
+    margin-bottom: 4px;
+}
+.section .content li{
+    list-style-type: none;
+    font-weight: 600;
+    margin-left: -10px;
+    color: #9a9a9a;
+}
+.section .content li::before{
+    content: "▪";
+    color: #bb0404;
+    margin-left: -20px;
+    position: absolute
+}
