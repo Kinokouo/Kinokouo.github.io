@@ -1,0 +1,94 @@
+*{
+    background-color: aliceblue;
+}
+.u-password {
+    width: 1200px;
+    margin: 0 auto;
+}
+.gif{
+    width: 300px;
+    margin: auto;
+    margin-bottom: -6px;
+}
+.gif img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.txt{
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+.txt button{
+    width: 120px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: 	#A6FFFF;
+}
+.txt button:hover{
+    background-color: #FFD9EC;
+}
+.txt input{
+    width: 235px;
+    padding: 3px 0;
+    font-size: 15px;
+    text-align: center;
+}
+.tet1{
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+.txt1 p{
+    width: auto;
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+}
+.btn-gp .btn-item {
+    width: auto;
+    margin: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.btn-item button {
+    width: 50px;
+    padding: 15px;
+    margin: 2px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 0 10px #E0E0E0;
+}
+.btn-item button:hover{
+    background-color: #FFD9EC;
+}
+
+.btn-gp .btn-item:nth-child(4) button:nth-child(1) {
+    background-color: 	#F0F0F0;
+    border-radius: 5px;
+    color: 	#FF0000;
+    font-weight: 600;
+}
+.btn-gp .btn-item:nth-child(4) button:nth-child(1):hover{
+    background-color: #FFD9EC;
+}
+
+
+.btn-gp .btn-item:nth-child(4) button:nth-child(3) {
+    background-color: 	#F0F0F0;
+    border-radius: 5px;
+    font-weight: 600;
+    color: 	#FF0000;
+}
+.btn-gp .btn-item:nth-child(4) button:nth-child(3):hover{
+    background-color: #FFD9EC;
+}
+
