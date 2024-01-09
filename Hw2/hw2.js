@@ -37,6 +37,7 @@ ansBtn.addEventListener("click", () => {
 //重新開始
 const restartBtn = document.querySelector("#restart");
 restartBtn.addEventListener("click", () => {
+    alert(`本局的答案是:${ansNumber}`)
     location.reload();
 })
 
@@ -58,6 +59,7 @@ guessBtn.addEventListener("click", () => {
     const val = inputText.value.trim();
     if (!isValidInput(val)) {
         alert("請輸入4位不重複的數字!!")
+        inputText.value = "";
         return;
     }
     let a = 0;
