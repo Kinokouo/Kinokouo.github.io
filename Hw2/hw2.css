@@ -1,0 +1,32 @@
+*{
+    font-family: "Microsoft JhengHei", sans-serif, serif;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    color:	#FF359A;
+}
+.btn-group{
+    width: 700px;
+    margin: 10px 280px;
+    background-color: 	#FFECF5;
+}
+.btn-group button{
+    color: black;
+    text-align: center;
+}
+.list-group{
+    width: 700px;
+    margin: 10px 280px;
+    font-weight: 600;
+}
+.input-group{
+    width: 700px;
+    margin: 10px 280px;
+}
+.input-group button{
+    color: black;
+}
+.input-group button:hover{
+    color: blue;
+}
