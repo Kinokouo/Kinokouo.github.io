@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    /* width: 1200px; */
+    display: flex;
+    margin: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* box-shadow:5px 5px 10px rgba(128, 128, 128, 0.3); */
+}
+.heading .img{
+    width: 150px;
+    margin: auto;
+}
+.heading .search{
+    width: 400px;
+    margin: 20px;
+}
+.heading .search input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 15px;
+}
+.heading .search input:hover{
+    border: 1px solid #FF5809;
+}
+
+.heading .item-gp{
+    width: 500px;
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 30px;
+    justify-content: flex-end;
+}
+.heading .item-gp .item{
+    margin: 10px;
+}
+.heading .item-gp .item a{
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.heading .item-gp .item a:hover{
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+
+
+.wrap{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #fafafaff;
+    padding-top: 150px;
+}
+.account-gp{
+    width: 300px;
+    margin-right: 50px;
+}
+.account-gp .person-information{
+    padding: 20px;
+    background: linear-gradient(#54c7d6ff, white);
+    border-radius: 10px;
+}
+.account-gp .person-information .photo{
+    width: 100px;
+    margin: auto;
+}
+.account-gp .person-information .photo img{
+    border-radius: 50%;
+}
+.account-gp .person-information .name{
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+}
+.account-gp .person-information .edit-information{
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
+.account-gp .person-information .edit-information a{
+    color: white;
+    text-decoration: none;
+}
+.account-gp .person-information ul{
+    margin-top: 25px;
+}
+.account-gp .person-information ul .item a{
+    width: 100%;
+    display: flex;
+}
+.account-gp .person-information ul .item a:hover{
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.account-gp .person-information ul .item a img{
+    width: 20px;
+    margin: 15px;
+    margin-right: 5px;
+}
+.account-gp .person-information ul .item li{
+    color: black;
+    font-size: 17px;
+    margin: 15px;
+}
+
+.evaluate-gp{
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+.evaluate-gp .head{
+    padding: 10px;
+}
+.evaluate-gp .head h3{
+    margin: 20px 10px;
+    padding-left: 30px;
+}
+.evaluate-gp .head h3::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 18px;
+    background-color: #FF5809;
+    border-radius: 99rem;
+    margin-left: -15px;
+    margin-top: 3px;
+}
+
+.evaluate{
+    width: 700px;
+}
+.evaluate .btn{
+    border-bottom: 1px solid #E0E0E0;
+    margin: 0 15px;
+}
+.evaluate .btn button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 13px;
+    margin: 0 5px;
+}
+
+
+.evaluate .content{
+    width: 100%;
+}
+.evaluate .content .img{
+    width: 200px;
+    margin: auto;
+    margin-top: 35px;
+}
+.evaluate .content .txt{
+    color: black;
+    text-align: center;
+}
+.evaluate .content .txt p{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.evaluate .content .txt span{
+    display: block;
+    font-size: 13px;
+    margin: 15px;
+    color: gray;
+}
+
