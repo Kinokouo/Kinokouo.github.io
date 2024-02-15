@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    /* width: 1200px; */
+    display: flex;
+    margin: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* box-shadow:5px 5px 10px rgba(128, 128, 128, 0.3); */
+}
+.heading .img{
+    width: 150px;
+    margin: auto;
+}
+.heading .search{
+    width: 400px;
+    margin: 20px;
+}
+.heading .search input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 15px;
+}
+.heading .search input:hover{
+    border: 1px solid #FF5809;
+}
+
+.heading .item-gp{
+    width: 500px;
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 30px;
+    justify-content: flex-end;
+}
+.heading .item-gp .item{
+    margin: 10px;
+}
+.heading .item-gp .item a{
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.heading .item-gp .item a:hover{
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+
+
+.wrap{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #fafafaff;
+    padding-top: 150px;
+}
+.account-gp{
+    width: 300px;
+    margin-right: 50px;
+}
+.account-gp .person-information{
+    padding: 20px;
+    background: linear-gradient(#54c7d6ff, white);
+    border-radius: 10px;
+}
+.account-gp .person-information .photo{
+    width: 100px;
+    margin: auto;
+}
+.account-gp .person-information .photo img{
+    border-radius: 50%;
+}
+.account-gp .person-information .name{
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+}
+.account-gp .person-information .edit-information{
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
+.account-gp .person-information .edit-information a{
+    color: white;
+    text-decoration: none;
+}
+.account-gp .person-information ul{
+    margin-top: 25px;
+}
+.account-gp .person-information ul .item a{
+    width: 100%;
+    display: flex;
+}
+.account-gp .person-information ul .item a:hover{
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.account-gp .person-information ul .item a img{
+    width: 20px;
+    margin: 15px;
+    margin-right: 5px;
+}
+.account-gp .person-information ul .item li{
+    color: black;
+    font-size: 17px;
+    margin: 15px;
+    
+}
+
+
+.use-gp{
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+.use-gp .exchange{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.use-gp .exchange input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #E0E0E0;
+    border-right: none;
+}
+.use-gp .exchange button{
+    width: 120px;
+    padding: 8px;
+    border-radius: 0 8px 8px 0;
+    background-color:#FF5809;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #E0E0E0;
+}
+.use-gp .exchange button:hover{
+    background-color: #F75000;
+}
+
+.applicable{
+    width: 700px;
+}
+.applicable .btn{
+    border-bottom: 1px solid #E0E0E0;
+    margin: 0 15px;
+}
+.applicable .btn button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 13px;
+    margin: 0 5px;
+}
+
+
+.applicable .coupon{
+    width: 100%;
+}
+.applicable .coupon .img{
+    width: 200px;
+    margin: auto;
+    margin-top: 35px;
+}
+.applicable .coupon .txt{
+    color: gray;
+    text-align: center;
+}
+.applicable .coupon .txt p{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.applicable .coupon .txt span{
+    display: block;
+    font-size: 13px;
+    margin: 15px;
+}
+
+
+.applicable .coupon .coupon-btn{
+    display: flex;
+    justify-content: center;
+}
+.applicable .coupon .coupon-btn button{
+    width: 130px;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 200px;
+}
+.applicable .coupon .coupon-btn button:nth-child(1){
+    background-color: #FF5809;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #FF5809;
+}
+.applicable .coupon .coupon-btn button:nth-child(1):hover{
+    background-color: #F75000;
+}
+.applicable .coupon .coupon-btn button:nth-child(2){
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: 1px solid black;
+}
+.applicable .coupon .coupon-btn button:nth-child(2):hover{
+    background-color: #F0F0F0;
+}
