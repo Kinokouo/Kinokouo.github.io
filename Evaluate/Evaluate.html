@@ -1,15 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Evaluate/Evaluate.css">
+    <style>
+        #menu_control {
+            position: absolute;
+            z-index: -2;
+            opacity: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: #dbf3ea;
+            position: relative;
+        }
+
+        .logo {
+            width: 150px;
+            padding: 2.5px 0;
+        }
+
+        .logo img {
+            vertical-align: middle;
+            padding: 0 50px;
+        }
+
+        .menu_btn {
+            width: 40px;
+            height: 40px;
+            background-color: #dbf3ea;
+            display: block;
+            position: absolute;
+            top: 5px;
+        }
+
+        .menu_btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+
+        .menu_btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 6px;
+            width: 36px;
+            background-color: #8cc1b6;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #8cc1b6, 0px -8px 0px #8cc1b6;
+        }
+
+        nav {
+            width: 100%;
+            height: 100vh;
+            background-color: #dbf3ea;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+
+        nav .person {
+            width: 100%;
+        }
+
+        nav .person a {
+            display: flex;
+        }
+
+        nav .person p {
+            padding: 60px 5px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        nav .person .headshot {
+            width: 150px;
+            margin: 15px;
+        }
+
+        nav .person img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        nav .person .setting {
+            width: 30px;
+            position: absolute;
+            top: 130px;
+            right: 10px;
+        }
+
+        nav .person .setting img {
+            width: 100%;
+        }
+
+        nav ul {
+            margin-top: 25px;
+        }
+
+        nav ul .item a {
+            width: 100%;
+            display: flex;
+        }
+
+        nav ul .item a:hover {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        nav ul .item a img {
+            width: 20px;
+            margin: 15px;
+            margin-right: 5px;
+        }
+
+        nav ul .item li {
+            color: black;
+            font-size: 17px;
+            margin: 15px;
+        }
+
+        /* 我的評價 */
+        .rwd-evaluate-gp {
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .rwd-evaluate-gp .rwd-head {
+            text-align: center;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .rwd-evaluate-gp .rwd-head h3 {
+            margin: 14px 0;
+            font-size: 20px;
+            
+        }
+        /* 待評價/已評價 */
+        .rwd-evaluate-gp .rwd-evaluate{
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .rwd-evaluate-gp .rwd-evaluate .rwd-btn {
+            border-bottom: 1px solid #E0E0E0;
+            display: flex;
+        }
+
+        .rwd-evaluate-gp .rwd-evaluate .rwd-btn button {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            padding: 13px;
+            text-align: center;
+        }
+        /* 底部文字 */
+        .rwd-applicable .rwd-content {
+            width: 100%;
+        }
+
+        .rwd-content .img {
+            width: 200px;
+            margin: auto;
+            margin-top: 35px;
+        }
+
+        .rwd-content .txt {
+            color: black;
+            text-align: center;
+        }
+
+        .rwd-content .txt p {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .rwd-content .txt span {
+            display: block;
+            font-size: 14px;
+            margin: 15px;
+        }
+
+        #menu_control:checked~.header nav {
+            left: 0;
+        }
+
+        /* 大於或等於768像素時 */
+        @media screen and (min-width:768px) {
+            .header {
+                display: none;
+            }
+        }
+
+        /* 小於或等於768像素時 */
+        @media screen and (max-width:768px) {
+            .heading {
+                display: none;
+            }
+
+            .wrap {
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <!-- RWD -->
+    <input type="checkbox" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo"><a href="#"><img src="/Photo/flavor (2).png" alt=""></a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <div class="person">
+                <a href="#">
+                    <div class="headshot"><img src="/Photo/me.png" alt=""></div>
+                    <p>用戶Name</p>
+                    <div class="setting"><img src="/Photo/setting.png" alt=""></div>
+                </a>
+            </div>
+            <ul>
+                <div class="item"><a href="#"><img src="/Photo/order.png" alt="">
+                        <li>訂單</li>
+                    </a></div>
+                <div class="item"><a href="#"><img src="/Photo/coupon.png" alt="">
+                        <li>優惠碼</li>
+                    </a></div>
+                <div class="item"><a href="#"><img src="/Photo/comment.png" alt="">
+                        <li>評價</li>
+                    </a></div>
+                <div class="item"><a href="#"><img src="/Photo/credit-card.png" alt="">
+                        <li>管理方式</li>
+                    </a></div>
+                <div class="item"><a href="#"><img src="/Photo/love.png" alt="">
+                        <li>我的最愛</li>
+                    </a></div>
+                <div class="item"><a href="#"><img src="/Photo/setting.png" alt="">
+                        <li>帳戶設定</li>
+                    </a></div>
+            </ul>
+        </nav>
+        <div class="rwd-evaluate-gp">
+            <!--文字行 -->
+            <div class="rwd-head">
+                <h3>我的評價</h3>
+            </div>
+            <!-- 待評價/已評價區 -->
+            <div class="rwd-evaluate">
+                <div class="rwd-btn">
+                    <button>待評價</button>
+                    <button>已評價</button>
+                </div>
+                <div class="rwd-content">
+                    <div class="img"><img src="/Photo/evaluate.gif" alt=""></div>
+                    <div class="txt">
+                        <p>大家都想聽聽你的體驗心得</p>
+                        <span>發表評價賺 Klook 積分，輕鬆折抵下次消費</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- 標題區塊 -->
     <div class="heading">
-        <div class="img"><img src="/Photo/KLOOK.jpg" alt=""></div>
+        <div class="img"><img src="/Photo/flavor (2).png" alt=""></div>
         <div class="search"><input type="text" placeholder="探索目的地 / 活動"></div>
         <div class="item-gp">
             <div class="item"><a href="#">客服中心</a></div>
@@ -17,46 +291,64 @@
             <div class="item"><a href="#">註冊</a></div>
             <div class="item"><a href="#">登入</a></div>
         </div>
-    </div> 
+    </div>
     <div class="wrap">
         <!-- 個人用戶區塊 -->
-    <div class="account-gp">
-        <!-- 人頭區 -->
-        <div class="person-information">
-            <div class="photo"><img src="/Photo/me.png" alt=""></div>
-            <div class="name"><p>Klook 用戶</p></div>
-            <div class="edit-information"><a href="#"><p>管理個人資料 ></p></a></div>
-            <!-- 操作區 -->
-            <ul>
-                <div class="item"><a href="#"><img src="/Photo/order.png" alt=""><li>訂單</li></a></div>
-                <div class="item"><a href="#"><img src="/Photo/coupon.png" alt=""><li>優惠碼</li></a></div>
-                <div class="item"><a href="#"><img src="/Photo/comment.png" alt=""><li>評價</li></a></div>
-                <div class="item"><a href="#"><img src="/Photo/credit-card.png" alt=""><li>管理方式</li></a></div>
-                <div class="item"><a href="#"><img src="/Photo/love.png" alt=""><li>我的最愛</li></a></div>
-                <div class="item"><a href="#"><img src="/Photo/setting.png" alt=""><li>帳戶設定</li></a></div>
-            </ul>
-        </div>
-    </div>
-    <!-- 評價區塊 -->
-    <div class="evaluate-gp">
-        <!--文字行 -->
-        <div class="head">
-            <h3>我的評價</h3>
-        </div>
-        <!-- 待評價/已評價區 -->
-        <div class="evaluate">
-            <div class="btn">
-                <button>待評價</button>
-                <button>已評價</button>
+        <div class="account-gp">
+            <!-- 人頭區 -->
+            <div class="person-information">
+                <div class="photo"><img src="/Photo/me.png" alt=""></div>
+                <div class="name">
+                    <p>Klook 用戶</p>
+                </div>
+                <div class="edit-information"><a href="#">
+                        <p>管理個人資料 ></p>
+                    </a></div>
+                <!-- 操作區 -->
+                <ul>
+                    <div class="item"><a href="#"><img src="/Photo/order.png" alt="">
+                            <li>訂單</li>
+                        </a></div>
+                    <div class="item"><a href="#"><img src="/Photo/coupon.png" alt="">
+                            <li>優惠碼</li>
+                        </a></div>
+                    <div class="item"><a href="#"><img src="/Photo/comment.png" alt="">
+                            <li>評價</li>
+                        </a></div>
+                    <div class="item"><a href="#"><img src="/Photo/credit-card.png" alt="">
+                            <li>管理方式</li>
+                        </a></div>
+                    <div class="item"><a href="#"><img src="/Photo/love.png" alt="">
+                            <li>我的最愛</li>
+                        </a></div>
+                    <div class="item"><a href="#"><img src="/Photo/setting.png" alt="">
+                            <li>帳戶設定</li>
+                        </a></div>
+                </ul>
             </div>
-            <div class="content">
-                <div class="img"><img src="/Photo/evaluate.gif" alt=""></div>
-                <div class="txt"><p>大家都想聽聽你的體驗心得</p>
-                    <span>發表評價賺 Klook 積分，輕鬆折抵下次消費</span>
+        </div>
+        <!-- 評價區塊 -->
+        <div class="evaluate-gp">
+            <!--文字行 -->
+            <div class="head">
+                <h3>我的評價</h3>
+            </div>
+            <!-- 待評價/已評價區 -->
+            <div class="evaluate">
+                <div class="btn">
+                    <button>待評價</button>
+                    <button>已評價</button>
+                </div>
+                <div class="content">
+                    <div class="img"><img src="/Photo/evaluate.gif" alt=""></div>
+                    <div class="txt">
+                        <p>大家都想聽聽你的體驗心得</p>
+                        <span>發表評價賺 Klook 積分，輕鬆折抵下次消費</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </body>
+
 </html>

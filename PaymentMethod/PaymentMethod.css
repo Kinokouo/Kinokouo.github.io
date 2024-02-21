@@ -15,10 +15,10 @@ a{
     display: flex;
     margin: auto;
     background-color: white;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
     /* box-shadow:5px 5px 10px rgba(128, 128, 128, 0.3); */
 }
 .heading .img{
@@ -70,7 +70,7 @@ a{
     margin: auto;
     justify-content: center;
     background-color: #fafafaff;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 .account-gp{
     width: 300px;
@@ -78,7 +78,7 @@ a{
 }
 .account-gp .person-information{
     padding: 20px;
-    background: linear-gradient(#54c7d6ff, white);
+    background: linear-gradient(#dbf3ea, white);
     border-radius: 10px;
 }
 .account-gp .person-information .photo{
@@ -94,7 +94,7 @@ a{
     text-align: center;
     font-size: 23px;
     font-weight: 600;
-    color: white;
+    color: black;
     padding: 5px;
 }
 .account-gp .person-information .edit-information{
@@ -104,7 +104,7 @@ a{
     font-size: 13px;
 }
 .account-gp .person-information .edit-information a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .account-gp .person-information ul{
@@ -115,7 +115,7 @@ a{
     display: flex;
 }
 .account-gp .person-information ul .item a:hover{
-    background-color: #f5f5f5;
+    background-color: #E0E0E0;
     border-radius: 8px;
 }
 .account-gp .person-information ul .item a img{
@@ -193,10 +193,10 @@ a{
     border-radius: 8px;
     border: none;
     margin-bottom: 200px;
-    background-color: #FF5809;
+    background-color: #029278;
     color: white;
     font-weight: 600;
-    border: 1px solid #FF5809;
+    border: 1px solid #029278;
 }
 .payment .payment-btn button:hover{
     background-color: #F75000;
