@@ -1,6 +1,6 @@
 .card-group{
     width: 1200px;
-    justify-content: center;
+    /* justify-content: center; */
     border-bottom: #6c6c6c 0.5px dashed;
     display: flex;
     flex-wrap: wrap;
@@ -18,11 +18,11 @@
 .card:hover{
     background-color: #fffacd;
 }
-h3{
-    line-height: 0;
-    text-align: left;
+.slogan{
+    line-height: 2;
     color: 	#EA0000;
     font-size: 12px;
+    font-weight: 700;
 }
 p{
     margin: 0.5px;
@@ -51,7 +51,7 @@ p{
     
 }
 .evaluate {
-    padding: 0px;
+    /* padding: 0px; */
     font-size: 15px;
     color: 	#FFD306;
     font-weight: 700;
@@ -115,4 +115,7 @@ p{
     flex-wrap: wrap;
     margin: auto;
     font-family: 'Microsoft JhengHei', sans-serif;
+}
+h2{
+    text-align: center;
 }
